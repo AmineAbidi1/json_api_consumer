@@ -1,0 +1,16 @@
+<h1>Results</h1>
+<% if @final['code'] == 'NO_CONTENT' %>
+  <div class='no_offers'>
+    No Offers
+  </div>
+
+<% elsif @final['code'] == 'OK' %>
+  <%= render 'ok' %>
+
+<% else %>
+  <div class='invalid'>
+    <%= @final['code'] %>
+  </div>
+<% end%>
+
+<%= link_to 'New Transaction', new_transaction_path %>

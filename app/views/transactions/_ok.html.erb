@@ -1,0 +1,18 @@
+<% @final['offers'].each do |offer| %>
+    <table>
+      <tr>
+        <th>Offer Title</th>
+        <th>Offer Payout</th>
+        <th>Offer Thumbnail</th>
+      </tr>
+      <td>
+        <%= offer['title'] %>
+      </td>
+      <td>
+        <%= offer['payout'] %>
+      </td>
+      <td>
+        <%= image_tag(offer['thumbnail']['lowres'], class: 'list_image') %>
+      </td>
+    </table>
+<% end %>
