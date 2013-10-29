@@ -2,6 +2,15 @@
 
 A basic Rails application that consumes a RESTful API
 
+## Introduction
+
+The purpose of this project is to consume a public API secured with a unique API KEY through a Rails application.
+
+The communication with the server is done via a SHA1 hashkey generated through a set of params.
+
+The most important part of this project, the HTTP communication with this the server and the response handling, is being done through the HTTP client lib Faraday https://github.com/lostisland/faraday.
+
+
 ## Installation
 
 clone the repo:
